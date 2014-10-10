@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_gravity="top"
+	android:gravity="top"
+	android:orientation="vertical"
+	android:windowAnimationStyle="@android:style/Animation.Translucent"
+	android:windowBackground="@android:color/transparent"
+	android:windowIsTranslucent="true"
+    tools:context="com.example.phonesignature.IncomingCallActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="120dp"
+        android:src="@drawable/background" />
+
+</RelativeLayout>
