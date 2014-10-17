@@ -6,14 +6,14 @@
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-	<uses-permission android:name="android.permission.WRITE_CONTACTS" />
-	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
-	<uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
 
     <action android:name="android.intent.action.PHONE_STATE" />
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="15"
         android:targetSdkVersion="19" />
 
     <application
@@ -22,7 +22,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.phonesignature.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,17 +31,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.phonesignature.IncomingCallActivity"
-            android:label="@string/title_activity_incoming_call" 
-            android:theme="@android:style/Theme.Translucent">
+            android:name=".IncomingCallActivity"
+            android:label="@string/title_activity_incoming_call"
+            android:theme="@android:style/Theme.Translucent" >
         </activity>
-        
-        <receiver android:name="MyPhoneReceiver" >
-	        <intent-filter>
-	            <action android:name="android.intent.action.PHONE_STATE" >
-	            </action>
-	        </intent-filter>
-		</receiver>
+
+        <receiver android:name=".MyPhoneReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".CustomizeCardActivity"
+            android:label="@string/title_activity_customize_card" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,60 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomlinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.phonesignature.CustomizeCardActivity" >
+
+    <EditText
+        android:id="@+id/one"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:layout_x="28dp"
+        android:ems="10"
+        android:text="Drag Me"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/upBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="234dp"
+        android:layout_y="314dp"
+        android:text="Up" 
+        android:onClick="moveUp"/>
+
+    <Button
+        android:id="@+id/leftBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="192dp"
+        android:layout_y="366dp"
+        android:text="Left" 
+        android:onClick="moveLeft"/>
+
+    <Button
+        android:id="@+id/rightBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="268dp"
+        android:layout_y="368dp"
+        android:text="Right" 
+        android:onClick="moveRight"/>
+
+    <Button
+        android:id="@+id/downBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="230dp"
+        android:layout_y="418dp"
+        android:onClick="moveDown"
+        android:text="Down" />
+
+</AbsoluteLayout>
